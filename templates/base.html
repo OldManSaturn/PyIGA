@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Py IGA{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h3 style="text-align: center;">Identity Governance - Powered by Python and Flask</h3>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('requests') }}">Requests</a></li>
+                <li><a href="{{ url_for('admin') }}">Admin</a></li>
+                <li><a href="{{ url_for('identities') }}">Identities</a></li>
+                <li><a href="{{ url_for('reporting') }}">Reporting</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer style="text-align: center;">
+        <p>&copy; 2025 Dalton Herriman - Py IGA</p>
+    </footer>
+</body>
+</html>
