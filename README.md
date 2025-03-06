@@ -1,5 +1,5 @@
 # Py IGA
-WORK IN PROGRESS
+WORK IN PROGRESS -- 
 Py IGA is an Identity Governance and Administration (IGA) tool designed to help organizations manage and secure their digital identities.
 
 ## Features
